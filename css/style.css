@@ -324,9 +324,10 @@ h5 {
     margin: auto;
 }
 
+/*
 .main {
     margin-top: 110px;
-}
+}*/
 
 .container p {
     max-width: 1000px;
@@ -335,12 +336,13 @@ h5 {
 
 /* HEADER INFO AND NAVIGATION */
 
+
 #home {
     background-color: #2C3531;
     color: white;
-    overflow: hidden;
+    /*overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 0;*/
     width: 100%;
     z-index: 1;
 }
@@ -370,6 +372,8 @@ h5 {
 .navigation {
     flex: 1;
     padding: 0.5em;
+    align-self: center;
+    width: 80%;
 }
 
 .navigation ul {
@@ -378,10 +382,15 @@ h5 {
 
 .navigation li {
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation li a {
     color: white;
+    width: 33 %;
+    text-align: center;
+    margin: 0em 1em 0em 1em;
 }
 
 /* COVER INFO */
@@ -438,6 +447,10 @@ h5 {
     text-align: center;
 }
 
+.imgCard1 p {
+    margin-bottom: 2em;
+}
+
 .imgCard1 h2 {
     margin: 2em auto 0.5em auto;
     font-size: 30px;
@@ -477,7 +490,7 @@ h5 {
 }
 
 #projects2 {
-    border-top: solid white;
+    /*border-top: solid white;*/
 }
 
 /* CONTACT INFO */
@@ -501,12 +514,13 @@ h5 {
 }
 
 .contactInfo {
-    flex: 2;
+    flex: 1;
     order: 1;
     padding-top: 1.5em;
     padding-right: 2em;
     border-right: solid white;
     border-width: 2px;
+    width: 100%;
 }
 
 .contactInfo a {
@@ -522,10 +536,11 @@ p:nth-child(8) {
 .contactForm {
     flex: 1;
     order: 2;
+    padding-left: 2em;
 }
 
 form {
-    width: 75%;
+    width: 100%;
     margin: auto;
     padding-top: 1.5em;
     font-family: 'Roboto', sans-serif;
@@ -545,6 +560,10 @@ textarea {
     padding: 0.5em;
     transition: width 0.4s ease-in-out;
     outline: none;
+}
+
+.contact form {
+    width: 100%;
 }
 
 textarea {
@@ -623,6 +642,22 @@ footer {
         border-bottom: solid white;
         border-width: 2px;
         padding-bottom: 2em;
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 100%;
+    }
+    
+    .textBox img {
+    margin: auto;
+    width: 250px;
+    height: auto;
+}
+    .contact form {
+        width: 100%;
+    }
+    
+    .contactForm {
+        padding-left: 0em;
     }
 }
 

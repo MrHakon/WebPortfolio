@@ -1,60 +1,151 @@
 /* RESET CSS BEGIN */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* RESET CSS END */
 
 /* HELPER CLASSES BEGIN */
-.alignLeft{
+
+.alignLeft {
     float: left;
 }
 
-.alignRight{
+.alignRight {
     float: right;
 }
 
@@ -74,8 +165,8 @@ table {
     margin-bottom: 40px;
 }
 
-strong, 
-b { 
+strong,
+b {
     font-weight: 700;
 }
 
@@ -93,6 +184,7 @@ ol li {
 }
 
 /* HELPER CLASSES*/
+
 .buttonLink {
     text-transform: uppercase;
     text-decoration: none;
@@ -101,7 +193,7 @@ ol li {
     padding: 0.3em 1em;
     border-radius: 0.2em;
     text-align: center;
-    width:auto;
+    width: auto;
     max-width: 300px;
     height: auto;
     max-height: 2.5em;
@@ -109,7 +201,7 @@ ol li {
     opacity: 0.7;
 }
 
-.buttonLink:hover{
+.buttonLink:hover {
     background-color: gray;
     transition: 0.2s;
 }
@@ -126,6 +218,7 @@ ol li {
 }
 
 /* positions */
+
 .centerMiddle {
     margin: auto;
 }
@@ -139,6 +232,7 @@ ol li {
 }
 
 /* colors */
+
 .moreInfoColor {
     background-color: #ffcb9a;
 }
@@ -148,7 +242,7 @@ ol li {
 }
 
 .highlightColor {
-    background-color: #2c3531;
+    background-color: #262833;
 }
 
 .bwColor {
@@ -161,6 +255,10 @@ ol li {
     background-color: #B29C8F;
 }
 
+.mainColor {
+    background-color: #606481;
+}
+
 /*
 MENU: #d1e8e2
 MAIN CONTENT: #2c3531
@@ -168,6 +266,10 @@ ACCENT: #d9b08c
 BUTTONS: #116466
 MORE INFO: #ffcb9a
 HIGHLIGHT: #ffcb9a;
+
+complements:
+78817D
+5F8172
 */
 
 /* FONTS 
@@ -177,6 +279,7 @@ font-family: 'Saira Extra Condensed', sans-serif;
 */
 
 /* GENERAL RULES */
+
 @font-face {
     font-family: "HelveticaNeue-Thin";
     src: local("HelveticaNeue-Thin.otf"), url("HelveticaNeue-Thin.otf") format("opentype");
@@ -195,12 +298,15 @@ p {
 }
 
 a {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.2rem;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     text-transform: uppercase;
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 1.5rem;
@@ -218,15 +324,25 @@ h2, h3, h4, h5 {
     margin: auto;
 }
 
+.main {
+    margin-top: 110px;
+}
+
 .container p {
     max-width: 1000px;
     margin: auto;
 }
 
-/* HEADER INFO AND NAVIGATION */ 
+/* HEADER INFO AND NAVIGATION */
+
 #home {
     background-color: #2C3531;
     color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .header {
@@ -238,10 +354,8 @@ h2, h3, h4, h5 {
 
 .siteIntro {
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    line-height: 35px;
     text-align: center;
-    margin: 1em auto 0.1em auto;
+    margin: 1em auto 0em auto;
 }
 
 .siteIntro h1 {
@@ -250,11 +364,12 @@ h2, h3, h4, h5 {
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.5em;
+    font-size: 1.6em;
 }
 
 .navigation {
     flex: 1;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .navigation ul {
@@ -270,6 +385,7 @@ h2, h3, h4, h5 {
 }
 
 /* COVER INFO */
+
 .about {
     display: flex;
     flex-direction: column;
@@ -299,11 +415,15 @@ h2, h3, h4, h5 {
 }
 
 /* PORTFOLIO INFO */
+
 .portfolio {
     flex: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom right, #262833, #2F3240);    
+    flex-wrap: wrap;
 }
+
 .portfolio h2 {
     margin: 2em auto 0.5em auto;
 }
@@ -331,12 +451,12 @@ h2, h3, h4, h5 {
 
 .textBox img {
     margin: auto;
-    width: 200px;
+    width: 500px;
     height: auto;
 }
 
 .textBox p {
-    max-width: 1200px;
+    max-width: 500px;
     min-width: 50%;
     padding: 0.2em 0em 1em 0em;
     margin: auto;
@@ -349,10 +469,19 @@ h2, h3, h4, h5 {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
 }
 
+#projects1 {
+    
+}
+
+#projects2 {
+    border-top: solid white;
+}
 
 /* CONTACT INFO */
+
 .contact {
     flex: 1;
     display: flex;
@@ -360,20 +489,34 @@ h2, h3, h4, h5 {
     color: white;
     width: 100%;
 }
+
 .contact h2 {
     margin: 2em auto 0.5em auto;
 }
 
 .contactDivs {
     display: flex;
-    width:70%;
+    width: 70%;
     margin: auto;
 }
 
 .contactInfo {
-    flex: 1;
+    flex: 2;
     order: 1;
     padding-top: 1.5em;
+    padding-right: 2em;
+    border-right: solid white;
+    border-width: 2px;
+}
+
+.contactInfo a {
+    margin-top: 1em;
+    text-transform: none;
+}
+
+.contactInfo p:nth-child(6),
+p:nth-child(8) {
+    margin: 1em;
 }
 
 .contactForm {
@@ -385,6 +528,10 @@ form {
     width: 75%;
     margin: auto;
     padding-top: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: white;
 }
 
 form a {
@@ -397,6 +544,7 @@ textarea {
     border-radius: 1em;
     padding: 0.5em;
     transition: width 0.4s ease-in-out;
+    outline: none;
 }
 
 textarea {
@@ -434,6 +582,7 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
 .footer {
     width: 100%;
     padding: 1em;
@@ -445,17 +594,36 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
 /*@media screen and (max-width: 45rem){
     .features {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }*/
-    
-@media screen and (max-width: 45rem){
+
+@media screen and (max-width: 45rem) {
     .projects {
         display: flex;
         flex-direction: column;
     }
-}   
+
+    .contactDivs {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        flex: 2;
+        order: 1;
+        padding-top: 1.5em;
+        border-right: none;
+        border-bottom: solid white;
+        border-width: 2px;
+        padding-bottom: 2em;
+    }
+}
+
 }

@@ -350,6 +350,7 @@ h5 {
 .header {
     width: 100%;
     background-color: #ffffff;
+    position: absolute; /*fixed */
     display: flex;
     flex-direction: column;
 }
@@ -371,7 +372,7 @@ h5 {
 
 .navigation {
     flex: 1;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0.8em 0.5em;
     align-self: center;
     width: 80%;
 }
@@ -391,6 +392,10 @@ h5 {
     width: 33 %;
     text-align: center;
     margin: 0em 1em 0em 1em;
+}
+
+.main {
+    margin-top: 110px;
 }
 
 /* COVER INFO */
@@ -415,6 +420,32 @@ h5 {
 
 .about a {
     margin: 1em auto 1em auto;
+}
+
+.aboutMe p {
+    max-width: 700px;
+    min-width: 250px;
+    margin-bottom: 2em;
+}
+
+.quickFacts {
+    display: flex;    
+    justify-content: space-between;
+    width: 700px;
+    align-self: center;
+}
+
+.fact {
+    width: 32%;
+    text-align: center;
+}
+
+.fact h2 {
+    margin: 0.5em auto 0.5em auto;
+}
+
+.fact p {
+    margin: 0em auto 1em auto;
 }
 
 .stdImg {
@@ -466,6 +497,8 @@ h5 {
     margin: auto;
     width: 500px;
     height: auto;
+    border: solid gray;
+    border-radius: 0.3em;
 }
 
 .textBox p {
@@ -622,6 +655,16 @@ footer {
 }*/
 
 @media screen and (max-width: 45rem) {
+    .quickFacts {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0em auto 0em auto;
+}
+    .fact {
+        margin: auto;
+    }
+
     .projects {
         display: flex;
         flex-direction: column;

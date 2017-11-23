@@ -189,7 +189,8 @@ ol li {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    background-color: #116466;
+    background-color: #83CEE0;
+    /*#116466;*/
     padding: 0.3em 1em;
     border-radius: 0.2em;
     text-align: center;
@@ -198,7 +199,7 @@ ol li {
     height: auto;
     max-height: 2.5em;
     margin: 0 auto 0 auto;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .buttonLink:hover {
@@ -239,6 +240,10 @@ ol li {
 
 .accentColor {
     background-color: #d9b08c;
+}
+
+.accentText {
+    color: #d9b08c;
 }
 
 .highlightColor {
@@ -288,6 +293,7 @@ font-family: 'Saira Extra Condensed', sans-serif;
 html {
     font-size: 100%;
     height: 100%;
+    width: 100%;
 }
 
 p {
@@ -324,10 +330,8 @@ h5 {
     margin: auto;
 }
 
-/*
-.main {
-    margin-top: 110px;
-}*/
+
+.main {}
 
 .container p {
     max-width: 1000px;
@@ -336,9 +340,8 @@ h5 {
 
 /* HEADER INFO AND NAVIGATION */
 
-
 #home {
-    background-color: #2C3531;
+    background-color: #262833;
     color: white;
     /*overflow: hidden;
     position: fixed;
@@ -349,36 +352,42 @@ h5 {
 
 .header {
     width: 100%;
-    background-color: #ffffff;
-    position: absolute; /*fixed */
+    position: absolute;
+    /*fixed */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 2em 0em 1em 0em;
+    padding: 0em auto 0em auto;
 }
 
 .siteIntro {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin: 1em auto 0em auto;
+    text-align: left;
+    flex: 2;
+    align-items: flex-start;
+    margin: 0em 1em 0em 1em;
+    padding: 1em 1em 1em 1em;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 .siteIntro h1 {
-    border-bottom: solid white;
     border-width: 2px;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 0.5em;
-    font-size: 1.6em;
+    padding: auto;
+    font-size: 2em;
+    font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .navigation {
     flex: 1;
-    padding: 0.5em 0.5em 0.8em 0.5em;
-    align-self: center;
-    width: 80%;
+
+    margin: auto;
 }
 
 .navigation ul {
     display: flex;
+    margin: auto;
 }
 
 .navigation li {
@@ -388,14 +397,18 @@ h5 {
 }
 
 .navigation li a {
-    color: white;
+    color: #d9b08c;
     width: 33 %;
     text-align: center;
     margin: 0em 1em 0em 1em;
+    font-size: 0.8em;
 }
 
 .main {
-    margin-top: 110px;
+    background: url(../img/ocean_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* COVER INFO */
@@ -403,14 +416,10 @@ h5 {
 .about {
     display: flex;
     flex-direction: column;
-    background-color: #729f98;
     flex: 1;
-    background: url(../img/ocean_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     width: auto;
     height: 1080px;
+    margin-top: 4em;
 }
 
 .about h2 {
@@ -429,7 +438,7 @@ h5 {
 }
 
 .quickFacts {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     width: 700px;
     align-self: center;
@@ -460,7 +469,7 @@ h5 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #262833, #2F3240);    
+    background: linear-gradient(to bottom right, #262833, #2F3240);
     flex-wrap: wrap;
 }
 
@@ -518,9 +527,7 @@ h5 {
     flex-wrap: wrap;
 }
 
-#projects1 {
-    
-}
+#projects1 {}
 
 #projects2 {
     /*border-top: solid white;*/
@@ -641,8 +648,19 @@ footer {
     text-align: center;
 }
 
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
 .footer p {
-    margin: auto;
+    margin: 2em auto 2em auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #d9b08c;
+    margin: 1em 2em 0.5em 2em;
 }
 
 /* MEDIA QUERIES */
@@ -655,53 +673,123 @@ footer {
 }*/
 
 @media screen and (max-width: 45rem) {
-    .quickFacts {
+    .main {
+        min-width: 350px;
+
+    }
+    .header {
+        width: 100%;
+        min-width: 350px;
+        background-color: #ffffff;
+        position: absolute;
+        /*fixed */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2em 0em 1em 0em;
+        padding: 0em auto 0em auto;
+    }
+
+    .siteIntro {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin: 1em auto 0em auto;
+        max-width: 400px;
+        min-width: 200px;
+    }
+
+.navigation {
+    flex: 1;
+    margin-bottom: 1em;
+    align-self: center;
+    width: 80%;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: auto;
+    height: 1080px;
+    margin-top: 7em;
+}
+
+.quickFacts {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: 0em auto 0em auto;
 }
-    .fact {
-        margin: auto;
-    }
 
-    .projects {
-        display: flex;
-        flex-direction: column;
-    }
+.fact {
+    margin: auto;
+}
 
-    .contactDivs {
-        display: flex;
-        width: 70%;
-        margin: auto;
-        flex-direction: column;
-    }
+.projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
 
-    .contactInfo {
-        flex: 2;
-        order: 1;
-        padding-top: 1.5em;
-        border-right: none;
-        border-bottom: solid white;
-        border-width: 2px;
-        padding-bottom: 2em;
-        padding-left: 0em;
-        padding-right: 0em;
-        width: 100%;
-    }
-    
-    .textBox img {
+.contactDivs {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.contactInfo {
+    flex: 2;
+    order: 1;
+    padding-top: 1.5em;
+    border-right: none;
+    border-bottom: solid white;
+    border-width: 2px;
+    padding-bottom: 2em;
+    padding-left: 0em;
+    padding-right: 0em;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 200px;
+    margin: 1em;
+}
+
+input[type=text]:focus {
+    width: 200px;
+}
+
+texetArea {
+    width: 200px;
+}
+
+.textBox img {
     margin: auto;
     width: 250px;
     height: auto;
 }
-    .contact form {
-        width: 100%;
-    }
-    
-    .contactForm {
-        padding-left: 0em;
-    }
+
+.contact form {
+    width: 100%;
+}
+
+.contactForm {
+    padding-left: 0em;
+}
+
+.footer p {
+    margin: 0.5em auto 0.5em auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #d9b08c;
+    margin: 1em 1em 0.5em 1em;
+}
+
 }
 
 }

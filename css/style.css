@@ -334,7 +334,7 @@ h5 {
 .main {}
 
 .container p {
-    max-width: 1000px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -381,7 +381,6 @@ h5 {
 
 .navigation {
     flex: 1;
-
     margin: auto;
 }
 
@@ -418,8 +417,9 @@ h5 {
     flex-direction: column;
     flex: 1;
     width: auto;
-    height: 1080px;
-    margin-top: 4em;
+    height: auto;
+    margin-top: 5em;
+    min-height: 700px;
 }
 
 .about h2 {
@@ -431,22 +431,39 @@ h5 {
     margin: 1em auto 1em auto;
 }
 
+.aboutMe {
+    flex: 2;
+    display: flex;
+    /*margin-top: 100px;*/
+}
+
 .aboutMe p {
-    max-width: 700px;
+    max-width: 1000px;
     min-width: 250px;
-    margin-bottom: 2em;
+    margin-bottom: 0;
+    flex: 1;
+    margin-top: auto;
 }
 
 .quickFacts {
     display: flex;
+    flex: 1;
     justify-content: space-between;
-    width: 700px;
-    align-self: center;
+    max-width: 1000px;
+    min-width: 250px;
+    margin: 0em auto auto auto;
+    align-items: flex-start;
 }
 
 .fact {
-    width: 32%;
+    width: 28%;
+    flex: 1;
     text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 250px;
 }
 
 .fact h2 {
@@ -464,6 +481,10 @@ h5 {
 }
 
 /* PORTFOLIO INFO */
+
+#portfolio {
+    height: auto;
+}
 
 .portfolio {
     flex: 1;
@@ -488,7 +509,9 @@ h5 {
 }
 
 .imgCard1 p {
-    margin-bottom: 2em;
+    margin: auto auto 2em auto;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .imgCard1 h2 {
@@ -504,7 +527,8 @@ h5 {
 
 .textBox img {
     margin: auto;
-    width: 500px;
+    max-height: 330px;
+    width: auto;
     height: auto;
     border: solid gray;
     border-radius: 0.3em;
@@ -527,10 +551,38 @@ h5 {
     flex-wrap: wrap;
 }
 
-#projects1 {}
+.colorDiv1 {
+    background-color: #8E96BF;
+    flex: 1;
+}
+
+.colorDiv2 {
+    background-color: #2F3240;
+    flex: 1;
+}
+
+.colorDiv3 {
+    background-color: #262833;
+    flex: 1;
+}
+
+.colorDiv4 {
+    background-color: #5F647F;
+    flex: 1;
+}
+
+#projects1 {
+    display: flex;
+    /*margin-right: 1em;
+    margin-left: 1em;*/
+}
 
 #projects2 {
     /*border-top: solid white;*/
+    display: flex;
+    /*margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;*/
 }
 
 /* CONTACT INFO */
@@ -611,12 +663,12 @@ textarea {
 }
 
 input[type=text] {
-    width: 230px;
+    width: 200px;
     margin: 1em;
 }
 
 input[type=text]:focus {
-    width: 250px;
+    width: 230px;
 }
 
 .imgCard2 {
@@ -663,14 +715,12 @@ footer {
     margin: 1em 2em 0.5em 2em;
 }
 
-/* MEDIA QUERIES */
+.footer a:hover {
+    color: #ffcb9a;
+    transition: 0.2s;
+}
 
-/*@media screen and (max-width: 45rem){
-    .features {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 45rem) {
     .main {
@@ -698,97 +748,129 @@ footer {
         min-width: 200px;
     }
 
-.navigation {
-    flex: 1;
-    margin-bottom: 1em;
-    align-self: center;
-    width: 80%;
-}
+    .navigation {
+        flex: 1;
+        margin-bottom: 1em;
+        align-self: center;
+        width: 100%;
+    }
 
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: auto;
+        height: auto;
+        margin-top: 200px;
+    }
+    
+    .aboutMe {
+        text-align: center;
+    }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: auto;
-    height: 1080px;
-    margin-top: 7em;
-}
+    .quickFacts {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0em auto 0em auto;
+    }
 
-.quickFacts {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: 0em auto 0em auto;
-}
+    .fact {
+        margin: 1em auto 1em auto;
+        width: 100%;
+        padding: 0em;
+    }
 
-.fact {
-    margin: auto;
-}
+    .fact p {
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        /* fix this */
+    }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-}
+    .projects {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
 
-.contactDivs {
-    display: flex;
-    width: 70%;
-    margin: auto;
-    flex-direction: column;
-}
+    #projects1 {
+        display: flex;
+        margin-right: 0em;
+        margin-left: 0em;
+    }
 
-.contactInfo {
-    flex: 2;
-    order: 1;
-    padding-top: 1.5em;
-    border-right: none;
-    border-bottom: solid white;
-    border-width: 2px;
-    padding-bottom: 2em;
-    padding-left: 0em;
-    padding-right: 0em;
-    width: 100%;
-}
+    #projects2 {
+        /*border-top: solid white;*/
+        display: flex;
+        margin-right: 0em;
+        margin-left: 0em;
+        margin-bottom: 0em;
+    }
 
-input[type=text] {
-    width: 200px;
-    margin: 1em;
-}
+    .colorDiv4 {
+        background-color: #5F647F;
+        flex: 1;
+        margin-bottom: 0em;
+    }
 
-input[type=text]:focus {
-    width: 200px;
-}
+    .contactDivs {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        flex-direction: column;
+    }
 
-texetArea {
-    width: 200px;
-}
+    .contactInfo {
+        flex: 2;
+        order: 1;
+        padding-top: 1.5em;
+        border-right: none;
+        border-bottom: solid white;
+        border-width: 2px;
+        padding-bottom: 2em;
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 100%;
+    }
 
-.textBox img {
-    margin: auto;
-    width: 250px;
-    height: auto;
-}
+    input[type=text] {
+        width: 200px;
+        margin: 1em;
+    }
 
-.contact form {
-    width: 100%;
-}
+    input[type=text]:focus {
+        width: 200px;
+    }
 
-.contactForm {
-    padding-left: 0em;
-}
+    texetArea {
+        width: 200px;
+    }
 
-.footer p {
-    margin: 0.5em auto 0.5em auto;
-}
+    .textBox img {
+        margin: auto;
+        width: 250px;
+        height: auto;
+    }
 
-.footer a {
-    text-decoration: none;
-    color: #d9b08c;
-    margin: 1em 1em 0.5em 1em;
-}
+    .contact form {
+        width: 100%;
+    }
+
+    .contactForm {
+        padding-left: 0em;
+    }
+
+    .footer p {
+        margin: 0.5em auto 0.5em auto;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #d9b08c;
+        margin: 1em 1em 0.5em 1em;
+    }
 
 }
 
